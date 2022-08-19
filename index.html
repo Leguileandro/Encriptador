@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">     
+    <title>Encriptador de Texto</title>
+    <script src="javascript/encriptar.js"></script>  
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/logo.png" > 
+    </header> 
+    <main>
+        <section class="izq">    
+            <form >
+                <textarea name= "Intro"  id="texto" placeholder="Ingrese el texto aquí" onclick="entradaDeTexto();" onkeyup="excepciones();" required autofocus></textarea>
+                <div class="advertencia">
+                    <img src="img/exclamacion.png" alt="exclamacion"> 
+                    <p>&nbsp; Solo letras minúsculas sin acentos</p>     
+                </div>
+                <div class="botones">
+                    <button type="button" onclick="botonencriptar()"class="botonE">Encriptar</button>
+                    <button type="button" onclick="botondesencriptar()"class="botonD">Desencriptar</button>
+                </div>
+            </form>                  
+        </section>
+
+        <section class="der">
+            <div id="resultado">
+                <textarea name="contendedorTexto" id="textoEncriptado"></textarea>  
+            </div>  
+            <div  id="imagen"> 
+                <img src="img/cifrar.jpg" alt="imagen de cifrar" id="imgcifrar">
+            <div class="informativo">
+                <h1>Ningún mensaje fue encontrado</h1>
+                <br><br>
+                <h5>Ingresa el texto que desees encriptar o desencriptar.</h5>
+            </div> 
+            </div> 
+            <div class="boton">
+                <button type="button" onclick="copiar()" class="botonC">Copiar</button>
+            </div>   
+        </section>
+    </main>
+    <footer class="footer">
+        <div>
+            <a href="https://github.com/Leguileandro"><p>Visita mi Github</p></a>
+            <br>
+            <a href="https://www.linkedin.com/in/leandro-emanuel-leguizamon"><p>Perfil de linkedin</p></a>
+            <br>
+            <p class="copyright">&copy Copyright Leguizamon Leandro Emanuel - 2022</p> 
+        </div>  
+    </footer>       
+</body>
+</html>
